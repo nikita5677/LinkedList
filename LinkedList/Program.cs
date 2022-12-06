@@ -10,14 +10,17 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC1
+            //UC2
             Console.WriteLine("Hello LinkedList!");
-            LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.Display();
-            Console.ReadKey();
+            UC2LinkedList List = new UC2LinkedList();
+            List.add(70);
+            //list.Display();
+            //Console.WriteLine("After Insertion Of 30");
+            List.add(30);
+            //list.Display();
+            //Console.WriteLine("After Insertion Of 56");
+            List.add(56);
+            List.Display();
         }
     }
 }
