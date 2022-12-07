@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    class UC7LinkedList
+    class UC8LinkedList
     {
         internal Node head; //new 
         internal void Add(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
+            {
                 this.head = node;
+            }
             else
             {
                 Node temp = head;
@@ -25,7 +27,6 @@ namespace LinkedList
             }
             Console.WriteLine("{0} inserted into the linked list", node.data);
         }
-
         internal void Display()
         {
             Node temp = this.head;
@@ -39,18 +40,6 @@ namespace LinkedList
                 Console.Write(temp.data + " ");
                 temp = temp.next; //temp=null
             }
-        }
-        internal Node Search(int value)
-        {
-            while (this.head != null)
-            {
-                if (this.head.data == value)
-                {
-                    return this.head;
-                }
-                this.head = this.head.next;
-            }
-            return null;
         }
     }
 }

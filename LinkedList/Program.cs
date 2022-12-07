@@ -10,13 +10,13 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC7
-            Console.WriteLine("Hello LinkedList");
-            UC7LinkedList list = new UC7LinkedList();
+            //UC8
+            Console.WriteLine("Hello LinkedList!");
+            UC8LinkedList list = new UC8LinkedList();
             list.Add(56);
             list.Add(30);
+            list.Add(40);
             list.Add(70);
-            list.Search(30);
             list.Display();
             Console.ReadKey();
         }
