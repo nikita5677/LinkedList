@@ -43,15 +43,12 @@ namespace LinkedList
         }
         internal void Delete(int value, int data)
         {
-
-
             Node node = head;
             while (node.data != value)
             {
                 node = node.next;
             }
             node.next = node.next.next;
-
         }
         internal void size()
         {
