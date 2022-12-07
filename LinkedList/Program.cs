@@ -91,6 +91,7 @@ namespace LinkedList
             //list.Add(70);
             //list.Display();
             //Console.ReadKey();
+            
 
             //UC9
             //UC9LinkedList list = new UC9LinkedList();
