@@ -56,7 +56,6 @@ namespace LinkedList
                 Node temp = this.head;
                 while (position != 0) //
                 {
-
                     if (position == 1)
                     {
                         Node node = new Node(data);
