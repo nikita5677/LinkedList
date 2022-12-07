@@ -21,6 +21,7 @@ namespace LinkedList
             //Console.WriteLine("After Insertion Of 56");
             List.add(56);
             List.Display();
+            
         }
     }
 }
