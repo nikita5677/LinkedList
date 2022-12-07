@@ -40,6 +40,7 @@ namespace LinkedList
                 temp = temp.next; //temp=null
             }
         }
+        
         internal Node Search(int value)
         {
             while (this.head != null)
