@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    class UC6LinkedList
+    class UC7LinkedList
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -40,20 +40,17 @@ namespace LinkedList
                 temp = temp.next; //temp=null
             }
         }
-        internal Node RemovaLastNode()
+        internal Node Search(int value)
         {
-            if (head == null)
-                return null;
-            if (head.next == null)
-                return null;
-            Node newNode = head;
-            while (newNode.next.next
-                != null)
+            while (this.head != null)
             {
-                newNode = (Node)newNode.next;
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
             }
-            newNode.next = null;
-            return head;
+            return null;
         }
     }
 }
