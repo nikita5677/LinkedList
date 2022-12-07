@@ -39,14 +39,13 @@ namespace LinkedList
                 Console.Write(temp.data + " ");
                 temp = temp.next; //temp=null
             }
-        }
+        }        
         internal Node RemoveFirstNode()
         {
             if (this.head == null)
                 return null;
             this.head = (Node)this.head.next;
             return this.head;
-
         }
     }
 }
