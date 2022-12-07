@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    class UC8LinkedList
+    class UC9LinkedList
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -39,6 +39,36 @@ namespace LinkedList
             {
                 Console.Write(temp.data + " ");
                 temp = temp.next; //temp=null
+            }
+        }
+        internal void Delete(int value, int data)
+        {
+
+
+            Node node = head;
+            while (node.data != value)
+            {
+                node = node.next;
+            }
+            node.next = node.next.next;
+
+        }
+        internal void size()
+        {
+            int a = 0;
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList Is Empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    a++;
+                    temp = temp.next;
+                }
+                Console.WriteLine("Size Is:" + a);
             }
         }
     }
