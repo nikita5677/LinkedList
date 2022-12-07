@@ -28,6 +28,7 @@ namespace LinkedList
                 Console.WriteLine(addr.data + ":Inserted SuccessFully");
             }
         }
+        
         public void Display()
         {
             if (this.head == null)
