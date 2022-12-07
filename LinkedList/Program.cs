@@ -10,14 +10,15 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC3
-            //Console.WriteLine("Hello LinkedList");
-            //UC3LinkedList list = new UC3LinkedList();
-            //list.Append(56);
-            //list.Append(30);
-            //list.Append(70);
-            //list.Display();
-            //Console.ReadKey();
+            //UC4
+            Console.WriteLine("Hello LinkedList!");
+            UC4LinkedList list = new UC4LinkedList();
+            list.Add(56);
+            //list.Add(30);
+            list.Add(70);
+            list.InsertAtParticularPosition(2, 30);
+            list.Display();
+            Console.ReadKey();
         }
     }
 }
