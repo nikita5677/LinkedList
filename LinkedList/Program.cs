@@ -10,14 +10,14 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //UC5
+            //UC6
             Console.WriteLine("Hello LinkedList");
-            UC5LinkedList list = new UC5LinkedList();
+            UC6LinkedList list = new UC6LinkedList();
             list.Add(56);
             list.Add(30);
             list.Add(70);
-            Console.WriteLine("After Removal of first node then linked list is");
-            list.RemoveFirstNode();
+            Console.WriteLine("After Removal of Last node then linked list is");
+            list.RemovaLastNode();
             list.Display();
             Console.ReadKey();
         }
