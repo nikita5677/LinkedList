@@ -40,6 +40,7 @@ namespace LinkedList
                 temp = temp.next; //temp=null
             }
         }
+        
         internal Node RemovaLastNode()
         {
             if (head == null)
