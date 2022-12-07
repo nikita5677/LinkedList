@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    class UC4LinkedList
+    class UC5LinkedList
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -40,37 +40,13 @@ namespace LinkedList
                 temp = temp.next; //temp=null
             }
         }
-        // 3 15
-        internal Node InsertAtParticularPosition(int position, int data)
+        internal Node RemoveFirstNode()
         {
-            if (position < 1)
-                Console.WriteLine("Invalid position");
-            if (position == 1)
-            {
-                var newNode = new Node(data);
-                newNode.next = this.head;
-                head = newNode;
-            }
-            else
-            {
-                Node temp = this.head;
-                while (position != 0) //
-                {
+            if (this.head == null)
+                return null;
+            this.head = (Node)this.head.next;
+            return this.head;
 
-                    if (position == 1)
-                    {
-                        Node node = new Node(data);
-                        node.next = this.head.next;
-                        head.next = node;
-                        break;
-                    }
-                    head.next = head;
-                }
-                if (position != 1)
-                    Console.WriteLine("Position out of range");
-            }
-            Console.WriteLine("Inserted value is : " + head);
-            return head;
         }
     }
 }
